@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import AccordeonNav from './components/accordeonNav.vue';
 
 </script>
 
@@ -11,7 +12,8 @@ import { RouterLink, RouterView } from 'vue-router'
     
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
+        <AccordeonNav />
+        
         
       </nav>
     </div>
