@@ -69,7 +69,7 @@ export default {
   box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
   -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
-  
+  margin-bottom: 0.2%;
 }
 
 .accordion-header {
