@@ -7,7 +7,7 @@
         </div>
         
         <div v-if="item.open" class="accordion-body ">
-          <transition name="fade">
+          <transition name="fade" >
             {{ item.body }}
           </transition>
           </div>
@@ -60,7 +60,7 @@ export default {
   
 <style>
 * {
-  color: aqua;
+  color: black;
 }
 
 .accordion-item {
@@ -76,13 +76,15 @@ export default {
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  text-align: left;
-  font-size: 15px;
+  text-align: center;
+  font-size: 25px;
   transition: 0.4s;
+  font-family: 'Rubik 80s Fade', cursive;
+  font-weight: 600;
 }
 
 .active {
-  color: chartreuse;
+  color: wheat;
 }
 
 .active,
@@ -92,6 +94,7 @@ export default {
 
 .accordion-body {
   background-color: white;
+  padding: 1%;
 }
 
 .hiddenfrr {
@@ -100,7 +103,9 @@ export default {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: all .5s;
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  transform: translateX(20px);
+  opacity: 0;
 }
 
 .fade-enter,
