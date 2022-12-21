@@ -5,14 +5,13 @@
         <div @click="toggleAccordion(index)" class="accordion-header " :class="{ 'active': item.open }">
           {{ item.header }}
         </div>
+        
         <div v-if="item.open" class="accordion-body ">
-          {{ item.body }}
+          <transition name="fade">
+            {{ item.body }}
+          </transition>
+          </div>
         </div>
-        <div v-else="!item.open" class="hiddenfrr" >
-          
-        </div>
-        <br>
-      </div>
     </template>
   </div>
 </template>
@@ -95,7 +94,17 @@ export default {
   background-color: white;
 }
 
-.hiddenfrr{
+.hiddenfrr {
   display: none;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
