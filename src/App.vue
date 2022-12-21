@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import AccordeonNav from './components/accordeonNav.vue';
+
 import AccordionDeux from './components/accordionDeux.vue';
 
 </script>
@@ -13,7 +13,7 @@ import AccordionDeux from './components/accordionDeux.vue';
     
 
       <nav>
-        <AccordeonNav />
+      
         <AccordionDeux />
         
       </nav>
